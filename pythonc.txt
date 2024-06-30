@@ -1,0 +1,8 @@
+from blog.models import Post  //to import Post
+from django.contrib.auth.models import User // to import our Userbase
+User.objects.all() // query set result which gives us all the users
+User.objects.first() // just gives us the first result
+User.objects.filter(username="CoreyMS")
+--> only gives the QuerySet which has the username - CoreyMS
+User.objects.filter(username='CoreyMS').first()
+--> just gives the first User instead of the QuerySet
